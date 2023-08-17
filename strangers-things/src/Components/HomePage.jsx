@@ -18,7 +18,7 @@ function Home() {
        
       }
     
-      fetchUserData();
+      summonUserData();
     }, []);
 
     return (

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import API_URL from "../API";
 
-
+//Function to get user data, currently not working
 function Home() {
 
     
@@ -12,13 +12,14 @@ function Home() {
         try {
           const response = await fetch(`${API_URL}/users/me`);
           const result = await response.json();
-         return result
+          console.table(result);
+          return result
         } catch (error) 
         
        
       }
     
-      fetchUserData();
+      summonUserData() 
     }, []);
 
     return (

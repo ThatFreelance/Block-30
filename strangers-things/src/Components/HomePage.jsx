@@ -19,7 +19,10 @@ function Home() {
        
       }
     
-      summonUserData() 
+
+
+      summonUserData();
+
     }, []);
 
     return (

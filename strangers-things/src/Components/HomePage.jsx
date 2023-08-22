@@ -3,7 +3,9 @@ import API_URL from "../API"
 import { Link } from "react-router-dom";
 import { loginUser } from '../API';
 
-function Homepage() {
+
+function HomePage() {
+
 
         
       useEffect(() => {   
@@ -21,8 +23,11 @@ function Homepage() {
     
 
 
+
+
       summonUserData();
 
+        main
     }, []);
 
     return (

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import API_URL from "../API";
 
-//Function to get user data, currently not working
-function Home() {
+
+function HomePage() {
 
     
     
@@ -21,8 +21,11 @@ function Home() {
     
 
 
+
+
       summonUserData();
 
+        main
     }, []);
 
     return (

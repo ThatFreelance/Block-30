@@ -1,6 +1,6 @@
-import API_URL from "../API"
 import { useState, useEffect } from "react"
-import MessagesForm from "./MessageForm.jsx"
+import API_URL from "../API"
+//import MessagesForm from "./MessageForm.jsx"
 
 function Posts() {
     const [data, setData] = useState([])
@@ -31,7 +31,6 @@ function Posts() {
                 <h2>{post.price}</h2>
                 <h2>{post.location}</h2>
                 <p>{post.description}</p>
-                <MessagesForm/>
             </div>
         ))}
     </div>

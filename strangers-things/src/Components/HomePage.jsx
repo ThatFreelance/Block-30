@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import API_URL from "../API";
 
 
-function Home() {
+function HomePage() {
 
     
     
@@ -12,13 +12,20 @@ function Home() {
         try {
           const response = await fetch(`${API_URL}/users/me`);
           const result = await response.json();
-         return result
+          console.table(result);
+          return result
         } catch (error) 
         
        
       }
     
+
+
+
+
       summonUserData();
+
+        main
     }, []);
 
     return (

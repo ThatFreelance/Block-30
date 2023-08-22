@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom";
 import { deletePost } from "../API";
 import SearchItems from "./SearchItems";
+import API_URL from "../API"
+//import MessagesForm from "./MessageForm.jsx"
+
 
 function Posts({ posts, token }) {
   const tempPosts = Array.from(posts);
@@ -17,6 +20,7 @@ function Posts({ posts, token }) {
   }
 
   return (
+
     <div id="outer div element">
       <div>
         <h2>Items For Sale</h2>
@@ -49,7 +53,6 @@ function Posts({ posts, token }) {
           </div>
         );
       })}
-    </div>
   );
 }
 

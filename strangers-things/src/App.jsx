@@ -9,6 +9,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
+
         <Route path="/" element={<HomePage />} />
         <Route path="/posts" element={<Posts />} />
       </Routes>

@@ -19,7 +19,7 @@ function HomePage() {
         } catch (error) 
         
        
-      }
+      {
     
 
 
@@ -28,7 +28,7 @@ function HomePage() {
       summonUserData();
 
         main
-    }, []);
+    }; [];
 
     return (
     
@@ -48,5 +48,7 @@ function HomePage() {
           </div>
       )
     }
-    
-    export default HomePage
+  }),
+}      
+
+export default HomePage;

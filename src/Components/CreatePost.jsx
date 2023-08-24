@@ -8,7 +8,7 @@ function CreatePost({ token, fetchPosts, navigate }) {
   const [price, setPrice] = useState("");
   const [willDeliver, setWillDeliver] = useState(false);
 
-  const addPost = {
+  const newPost = {
     title: "Puppy for sale!",
     description: "Husky puppies for sale by owner",
     price: "$300",

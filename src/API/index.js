@@ -111,7 +111,7 @@ export async function createPost(token,
 //PATCH/posts/POST_ID (updatePost)--Jeremy//
 export async function updatePost({ token, title, description, price, location, willDeliver, postID }) {
     try {
-        const response = await fetch(`${baseURL}/posts/${postID}`, {
+        const response = await fetch(`${API_URL}/posts/${postID}`, {
             method: "PATCH",
             headers: {
                 'Content-Type': 'application/json',
@@ -157,7 +157,7 @@ export async function deletePost(token, postID) {
 //create new message//
 export async function createMessage({ postID, token, message }) {
     try {
-        const response = await fetch(`${baseURL}/posts/${postID}/messages`, {
+        const response = await fetch(`${API_URL}/posts/${postID}/messages`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
